@@ -69,7 +69,7 @@ CREATE PROCEDURE getSupplierServiceQuality()
 BEGIN
 SELECT s.supp_id, s.supp_name, r.rat_ratstars,
 CASE
-	WHEN r.rat_ratstars = 5 THEN "Excellent Service"
+    WHEN r.rat_ratstars = 5 THEN "Excellent Service"
     WHEN r.rat_ratstars > 4 THEN "Good Service"
     WHEN r.rat_ratstars > 2 THEN "Average Service"
     ELSE "Poor Service"
